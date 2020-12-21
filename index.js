@@ -23,5 +23,6 @@ function markDistanceAndPredecessor(predecessorNode, adjacentNodes){
   return adjacentNodes.map(node => {
     node.predecessor = predecessorNode.name;
     node.distance = predecessorNode.distance + 1;
+    return node
   })
 }
