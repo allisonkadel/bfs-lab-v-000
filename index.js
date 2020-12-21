@@ -4,8 +4,6 @@ function bfs(rootNode, vertices, edges){
 
 function findAdjacent(rootNode, vertices, edges){
   let res = edges.filter(edge => {
-    console.log(edge)
-    console.log(rootNode)
     return edge.includes(rootNode)
   })
   console.log(res)
