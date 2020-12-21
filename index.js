@@ -3,10 +3,10 @@ function bfs(rootNode, vertices, edges){
 }
 
 function findAdjacent(rootNode, vertices, edges){
-  console.log(rootNode, vertices, edges)
   let res = edges.filter(edge => {
     edge.includes(rootNode)
   })
+  console.log(res)
   let adjacent = res.map(edge => {
     if (edge[0] === rootNode){
       return edge[0]
