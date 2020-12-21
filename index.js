@@ -6,7 +6,7 @@ function findAdjacent(rootNode, vertices, edges){
   let res = edges.filter(edge => {
     console.log(edge)
     console.log(rootNode)
-    edge.includes(rootNode.name)
+    edge.includes(rootNode)
   })
   console.log(res)
   console.log(rootNode, vertices, edges)
