@@ -3,7 +3,7 @@ function bfs(rootNode, vertices, edges){
   let discoveredNodes = [rootNode];
   while (discoveredNodes.length > 0){
     let currentNode = discoveredNodes.shift();
-    let adjacentNodes = findAdjacent(rootNode, vertices, edges);
+    let adjacentNodes = findAdjacent(rootNode.name, vertices, edges);
   }
   
   markDistanceAndPredecessor(rootNode, adjacentNodes);
