@@ -1,5 +1,6 @@
 function bfs(rootNode, vertices, edges){
-
+  let adjacentNodes = findAdjacent(rootNode, vertices, edges);
+  markDistanceAndPredecessor(rootNode, adjacentNodes);
 }
 
 function findAdjacent(rootNode, vertices, edges){
