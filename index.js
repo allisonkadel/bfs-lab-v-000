@@ -7,7 +7,8 @@ function bfs(rootNode, vertices, edges){
   }
   
   markDistanceAndPredecessor(rootNode, adjacentNodes);
-  discoveredNodes.concat(adjacentNodes)
+  discoveredNodes.concat(adjacentNodes);
+  return discoveredNodes;
 }
 
 function findAdjacent(rootNode, vertices, edges){
