@@ -7,6 +7,7 @@ function findAdjacent(rootNode, vertices, edges){
     edge.includes(rootNode)
   })
   console.log(res)
+  console.log(rootNode, vertices, edges)
   let adjacent = res.map(edge => {
     if (edge[0] === rootNode){
       return edge[0]
