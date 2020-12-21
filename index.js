@@ -6,6 +6,7 @@ function bfs(rootNode, vertices, edges){
     let currentNode = discoveredNodes.shift();
     let adjacentNodes = findAdjacent(rootNode.name, vertices, edges);
     markDistanceAndPredecessor(rootNode, adjacentNodes);
+    console.log(adjacentNodes)
     discoveredNodes.concat(adjacentNodes);
     console.log(discoveredNodes)
   }
