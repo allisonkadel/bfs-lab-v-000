@@ -2,6 +2,7 @@ function bfs(rootNode, vertices, edges){
   rootNode.distance = 0;
   let discoveredNodes = [rootNode];
   while (discoveredNodes.length > 0){
+    let currentNode = discoveredNodes.shift();
     
   }
   let adjacentNodes = findAdjacent(rootNode, vertices, edges);
