@@ -20,7 +20,8 @@ function findAdjacent(rootNode, vertices, edges){
 }
 
 function markDistanceAndPredecessor(predecessorNode, adjacentNodes){
-  adjacentNodes.map(node => {
-    node.predecessor == predecessorNode.name
+  let nodes = adjacentNodes.map(node => {
+    node.predecessor = predecessorNode.name;
+    node.distance = predecessorNode.distance + 1;
   })
 }
