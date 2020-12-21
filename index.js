@@ -16,7 +16,9 @@ function findAdjacent(rootNode, vertices, edges){
       return edge[0]
     }
   })
-  return adjacent
+  return vertices.filter(vertex => {
+    return adjacent.includes(vertex.name)
+  })
 }
 
 function markDistanceAndPredecessor(){
