@@ -1,7 +1,9 @@
 function bfs(rootNode, vertices, edges){
   rootNode.distance = 0;
   let discoveredNodes = [rootNode];
-  
+  while (discoveredNodes.length > 0){
+    
+  }
   let adjacentNodes = findAdjacent(rootNode, vertices, edges);
   markDistanceAndPredecessor(rootNode, adjacentNodes);
 }
