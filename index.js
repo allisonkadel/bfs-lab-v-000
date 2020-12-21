@@ -1,4 +1,5 @@
 function bfs(rootNode, vertices, edges){
+  rootNode.distance = 0;
   let discoveredNodes = [rootNode];
   
   let adjacentNodes = findAdjacent(rootNode, vertices, edges);
