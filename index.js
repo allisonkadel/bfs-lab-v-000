@@ -15,7 +15,7 @@ function findAdjacent(rootNode, vertices, edges){
     }
   })
   return vertices.filter(vertex => {
-    return adjacent.includes(vertex.name)
+    return adjacent.includes(vertex.name) && vertex.distance == null
   })
 }
 
